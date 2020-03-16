@@ -1,4 +1,4 @@
-# proyecto# Proyecto de appMedica
+# Proyecto de appMedica
 
 Aplicacion de agenda medica para usuarios y médicos
 
