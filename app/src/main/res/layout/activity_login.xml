@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.loginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgbackgroundlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:background="@drawable/ic_background_login"
+            android:padding="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbackgroundlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+
+
+        <TextView
+            android:text="Medi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleA"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imglogo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/titleB"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:id="@+id/titleB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titleA"
+            app:layout_constraintTop_toBottomOf="@+id/imglogo"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="app" />
+
+
+        <ImageView
+            android:id="@+id/icon_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            app:srcCompat="@drawable/ic_email" />
+
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintHorizontal_weight="300.0"
+            app:layout_constraintLeft_toRightOf="@+id/icon_email"
+            app:layout_constraintRight_toLeftOf="@+id/space"
+            app:layout_constraintTop_toTopOf="@+id/icon_email"
+            app:layout_constraintWidth_min="100sp" />
+
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="0.01"
+            app:layout_constraintLeft_toRightOf="@+id/txt_email"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/icon_secure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_email"
+            app:layout_constraintVertical_bias="0.2"
+            app:srcCompat="@drawable/ic_unlock" />
+
+
+        <EditText
+            android:id="@+id/txt_secure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintHorizontal_weight="300.0"
+            app:layout_constraintLeft_toRightOf="@+id/icon_secure"
+            app:layout_constraintRight_toLeftOf="@+id/space_two"
+            app:layout_constraintTop_toTopOf="@+id/icon_secure"
+            app:layout_constraintWidth_min="100sp" />
+
+
+        <Space
+            android:id="@+id/space_two"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="0.01"
+            app:layout_constraintLeft_toRightOf="@+id/txt_secure"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="2.5mm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="250.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_secure"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintWidth_max="250sp"
+            app:layout_constraintWidth_min="150sp" />
+
+
+
+        <TextView
+            android:text="Registrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleC"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/titleB"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:id="@+id/OnclikRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titleC"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Click Aqui" />
+
+
+
+
+
+        <View
+            android:id="@+id/content_FB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@id/titleB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/OnclikRegister" />
+
+
+        <View
+            android:id="@+id/content_Google"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/cardview_shadow_start_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/titleA"
+            app:layout_constraintTop_toBottomOf="@+id/OnclikRegister" />
+
+        <TextView
+            android:text="¿Olvidaste tu contraseña?"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            app:layout_constraintStart_toStartOf="@+id/titleA"
+            app:layout_constraintTop_toBottomOf="@+id/content_FB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/OnclikRecovery"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:text="Click Aqui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/OnclikRecovery"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="left"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintStart_toEndOf="@+id/titleA"
+            app:layout_constraintTop_toBottomOf="@+id/content_Google"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="16dp" />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
